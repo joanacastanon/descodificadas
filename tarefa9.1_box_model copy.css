@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    color: mediumvioletred;
+    width: 400px;
+    border: 15px;
+    border-style: double;
+    text-align: center;
+
+    
+}
+
+#imagem {
+    width: 371px;
+    height: 340px;
+    padding: 20px;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+#texto {
+    position: absolute;
+    left: 120px;
+    top: 160px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+    color: yellow;
+}
