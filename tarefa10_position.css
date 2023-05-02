@@ -1,0 +1,37 @@
+.caixa_cinza {
+    width: 65%;
+    padding: 3px;
+    background-color: rgba(157, 157, 157, 0.564);
+}
+
+.caixa_branca {
+    display: inline-block;
+    width: 55%;
+    padding: 7px;
+    margin: 5px;
+    margin-right: 32px;
+    background-color: white;
+}
+
+h1 {
+    padding: 30px 100px;
+    margin: 7px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: rgba(203, 203, 203, 0.564);
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.5;
+    display: inline-block;
+    width: 38%;
+    position: relative;
+    bottom: 145px;
+    margin-left: 5px;
+}
+
+img {
+    position: relative;
+    left: 90px;
+}
