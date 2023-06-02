@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VegRango Quentinhas - Refeições</title>
+    <link rel="stylesheet" type="text/css" href="refeicoes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>VegRango Quentinhas | Refeições</title>
 </head>
 <body>
-    <header style="background-image: url(/Imagens\ descod/fundoPaginaRefeicoes.jpg); color: white;">
+    <!--HEADER: RESOLVER NO INDEX E COPIAR PARA CÁ-->
+    <header>
         <a href="index.html">
-            <img src="/Imagens descod/vegRango logo.png" alt="Logo da VegRango Quentinhas" title="Imagem de garfo e folhas acima no nome da empresa"> 
+            <img id="logo" src="/imagens descod/vegRango logo.png" alt="Logo da VegRango Quentinhas" title="Imagem de garfo e folhas acima no nome da empresa"> 
             <span>VegRango Quentinhas</span>
         </a>
         
@@ -23,23 +28,31 @@
         </nav>
     </header>
     <main>
-        <h3>Semana de 06-03-2023 a 10-03-2023</h3>
-        <h4>Opção 1</h4>
-        <h2>Macarrão ao pesto com vegetais</h2>
-        <img src="/Imagens descod/fundoPaginaRefeicoes.jpg" alt="" title="">
-        <h5>Fusilli integral ao pesto de manjericão e castanha de caju com brócolis, tomate e abobrinha grelhados</h5>
-        
-        <h4>Opção 2</h4>
-        <h2>Poke de Tofu</h2>
-        <img src="/Imagens descod/poke-de-tofu-vegano.jpeg" alt="" title="">
-        <h5>Arroz integral, tofu grelhado no shoyo com cebola, abacate, pepino, rabanete, cebola roxa, gergelim, salsinha</h5>
+        <h3 id="semana">Semana de 06-03-2023 a 10-03-2023</h3>
 
-        <h4>Opção 3</h4>
-        <h2>Moqueca de banana-da-terra</h2>
-        <img src="/Imagens descod/bobo.jfif" alt="" title="">
-        <h5>Moqueca de banana-da-terra feita com leite de coco caseiro acompanhada de arroz de brócolis e farofa</h5>
+        <section id="opcao1-section">
+            <h4>Opção 1</h4>
+            <h2>Macarrão ao pesto com vegetais</h2>
+            <img id="macarrao" src="/imagens descod/fundoPaginaRefeicoes.jpg" alt="" title="">
+            <h5>Fusilli integral ao pesto de manjericão e castanha de caju com brócolis, tomate e abobrinha grelhados</h5>
+        </section>
+
+        <section id="opcao2-section">
+            <h4>Opção 2</h4>
+            <h2>Poke de Tofu</h2>
+            <img id="poke" src="/imagens descod/poke-de-tofu-vegano.jpeg" alt="" title="">
+            <h5>Arroz integral, tofu grelhado no shoyo com cebola, abacate, pepino, rabanete, cebola roxa, gergelim, salsinha</h5>
+        </section>
+
+        <section id="opcao3-section">
+            <h4>Opção 3</h4>
+            <h2>Moqueca de banana-da-terra</h2>
+            <img id="moqueca" src="/imagens descod/moqueca.jpg" alt="" title="">
+            <h5>Moqueca de banana-da-terra feita com leite de coco caseiro acompanhada de arroz de brócolis e farofa</h5>
+        </section>
+
     </main>
-    <footer>
+    <footer class="rodape">
         <span id="rodapetexto"> por Joana Castañon para fins de aprendizagem (VegRango é uma empresa fictícia)</span>
     </footer>
 </body>

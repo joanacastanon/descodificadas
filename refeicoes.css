@@ -1,0 +1,39 @@
+* {
+    font-family: Roboto;
+}
+
+body{
+    background-color: #CADBDA;
+}
+
+header {
+
+    color: white;
+    height: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url("fundoPaginaRefeicoes.jpg");
+}
+
+#semana {
+    text-align: center;
+}
+
+#opcao1-section, #opcao2-section, #opcao3-section {
+    text-align: center;
+    padding: 20px;
+}
+
+
+#macarrao, #poke, #moqueca {
+    width: 300px; height: 200px; /*modificar: inspecionar no google sites*/
+}
+
+
+/* RODAPE */
+
+.rodape{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    padding-bottom: 20px;
+}

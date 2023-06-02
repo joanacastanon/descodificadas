@@ -1,0 +1,122 @@
+/* STYLE SITE DESCODIFICADAS (VEGRANGO) */
+
+* {
+    font-family: Roboto;
+}
+
+body {
+    background-color: #CADBDA;
+}
+
+header{
+
+    color: white;
+    height: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url("fundoPaginaInicial.jpg");
+}
+
+.logo{
+    width: 5%;
+    height: 5%;
+    padding: 1%;
+    text-align: left;
+    display: inline;
+    
+}
+
+#texto-logo{
+    font-size: 15pt;
+    font-weight: 300;
+    padding: 1%;
+    /*position: relative;
+    bottom: 20px; */
+    text-align: left;
+    display: inline;
+    text-decoration: none;
+}
+
+#barra-topo {
+    background-color: rgb(94, 86, 86);
+}
+
+#topicos-menu {
+    display: inline;
+}
+
+#menu li {
+    font-size: 12pt;
+    text-align: right;
+    display: inline;
+    cursor: pointer;
+    padding: 20px;
+}
+
+#menu a, #texto-logo {
+    text-decoration: none;
+}
+
+#menu .topicos-menu a {
+    font-weight: bold;
+}
+
+h1{
+    font-size: 70.6667px;
+}
+
+h3{
+    font-size: 20px;
+}
+#titulosubtitulo{
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+
+}
+.pedido, .entregas{
+    text-align: center;
+}
+
+/*#entregas{
+    padding: 30px;
+}*/
+
+
+#missao, #entregastitulo{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+
+}
+#facapedido, #entregasinfo{
+    font-size: 25px;
+    padding: 20px;
+}
+
+
+button {
+    background-color: rgba(12,128,121,1);
+    color: white;
+    font-size: 30px;
+    padding: 10px 100px;
+    border-radius: 8px;
+    border-style: none;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+#formulario{
+    height: 500px;
+
+}
+
+#mapa {
+    padding: 20px;
+}
+
+.rodape{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    padding-bottom: 20px;
+}

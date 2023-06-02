@@ -6,50 +6,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <title>VegRango Quentinhas</title>
+    <title>VegRango Quentinhas | Home</title>
 </head>
 <body>
-    <header style="background-image: url(/Imagens\ descod/fundoPaginaInicial.jpg); color: white;">
+    <header>
+        <div id="barra-topo">
         <a href="index.html">
-            <img src="/Imagens descod/vegRango logo.png" alt="Logo da VegRango Quentinhas" title="Imagem de garfo e folhas acima no nome da empresa"> 
-            <span>VegRango Quentinhas</span>
+            <img class="logo" src="VegRango logo.png" alt="Logo da empresa" title="VegRango Quentinhas"> 
+            <span id="texto-logo">VegRango Quentinhas</span>
         </a>
-        <nav>
-            <ul>
-                <li class="topicosMenu"><a href="index.html">Página Inicial</a></li>
-                <li class="topicosMenu"><a href="refeicoes.html">Refeições</a></li>
-                <li class="topicosMenu"><a href="na-midia.html">Na mídia</a></li>
+        <nav id="menu">
+            <ul class="topicos-menu">
+                <li><a href="index.html"></a>Página Inicial</a></li>
+                <li><a href="refeicoes.html"></a>Refeições</li></a>
+                <li><a href="na-midia.html"></a>Na mídia</li></a>
             </ul>
         </nav>
-        <section id="titulosubtitulos">
+    </div>
+    <main>
+        <section id="titulosubtitulo">
             <h3>Quentinhas Veganas</h3>
             <h1>VegRango</h1>
             <h3>Frescas ou congeladas</h3>
         </section>
     </header>
-    <main>
-        <section id="pedido">      
+        <section class="pedido">      
             <p id="missao"><br>Somos uma empresa familiar que quer levar o melhor da comida vegana para a sua casa</p>
             <p id="facapedido"><br>Para fazer seu pedido, clique no link ou preencha o formulário abaixo<br><br></p>
-            <button id="botaopedido">Faça seu pedido</button>
+            <button class ="botao" id="botaopedido" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScbv3CzDmtqu7aEmdw9wQOij-G2aeYhGdz5b9rJq9U_jLjOhg/viewform', '_blank')">Faça seu pedido!</button>
             <div id="formulario">
                 <iframe id="formulario" src="https://docs.google.com/forms/d/e/1FAIpQLScbv3CzDmtqu7aEmdw9wQOij-G2aeYhGdz5b9rJq9U_jLjOhg/viewform?embedded=true" width="640" height="1392" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
             </div>
-        </section>  
-        <section id="entregas">
-            <span id="entregas">Entregas</span>
+        </section>
+        <br><br><br>  
+        <section class="entregas">
+            <span id="entregastitulo">Entregas</span>
+            <br><br><br>
+            <span id="entregasinfo">Entregamos em qualquer estação de metrô do Rio de Janeiro</span>
             <br>
-            <span id="entregainfo">Entregamos em qualquer estação de metrô do Rio de Janeiro</span>
             <div id="mapa">
-                <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;"><div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Cidade+Rio+de+Janeiro,+Rio+de+Janeiro+-+State+of+Rio+de+Janeiro,+Brazil&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="embedded-map-code" href="https://www.bootstrapskins.com/themes" id="make-map-infor-mation">premium bootstrap themes</a><style>#embedded-map-display img{max-height:none;max-width:none!important;background:none!important;}</style></div>
+                <div style="text-decoration:none; overflow:hidden;max-width:100%;width:700px;height:500px; margin: 0 auto; padding: 20px;"><div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Cidade+Rio+de+Janeiro,+Rio+de+Janeiro+-+State+of+Rio+de+Janeiro,+Brazil&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><style>#embedded-map-display img{max-height:none;max-width:none!important;background:none!important;}</style></div>
             </div>
-        </section>        
+        </section>  
     </main>
-    <footer>
-        <span id="rodapetexto"> por Joana Castañon para fins de aprendizagem (VegRango é uma empresa fictícia)</span>
+    <footer class="rodape">
+        <div id="rodapetexto"> Criado por Joana Castañon para fins de aprendizagem (VegRango é uma empresa fictícia)</div>
     </footer>
 </body>
 </html>
