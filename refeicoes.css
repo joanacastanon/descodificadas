@@ -6,16 +6,25 @@ body{
     background-color: #CADBDA;
 }
 
-header {
-
+header{
     color: white;
-    height: auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)), url("fundoPaginaRefeicoes.jpg");
+    rgba(0, 0, 0, 0.5)), url("imagens descod/fundoPaginaRefeicoes.jpg");
+    background-size: 1250px;
+    height: 450px;
+}
+
+.logo{
+    width: 5%;
+    height: 5%;
+    padding: 1%;
+    text-align: left;
+    display: inline;  
 }
 
 #semana {
     text-align: center;
+    padding: 10px;
 }
 
 #opcao1-section, #opcao2-section, #opcao3-section {
@@ -30,7 +39,6 @@ header {
 
 
 /* RODAPE */
-
 .rodape{
     font-size: 12px;
     font-weight: bold;

@@ -9,11 +9,10 @@ body {
 }
 
 header{
-
     color: white;
     height: auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)), url("fundoPaginaInicial.jpg");
+    rgba(0, 0, 0, 0.5)), url("imagens descod/fundoPaginaInicial.jpg");
 }
 
 .logo{
@@ -21,8 +20,7 @@ header{
     height: 5%;
     padding: 1%;
     text-align: left;
-    display: inline;
-    
+    display: inline;  
 }
 
 #texto-logo{
@@ -114,6 +112,7 @@ button {
     padding: 20px;
 }
 
+/*RODAPE*/
 .rodape{
     font-size: 12px;
     font-weight: bold;
