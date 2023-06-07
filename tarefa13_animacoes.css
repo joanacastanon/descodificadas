@@ -1,0 +1,43 @@
+#caixa {
+    width: 600px;
+    height: 540px;
+    background-color: rgb(234, 201, 228);
+    margin: 0 auto;
+}
+
+#titulo, #subtitulo {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#titulo {
+    color: rgb(139, 0, 120);
+    font-size: 50px;
+}
+
+#subtitulo {
+    color: darkmagenta;
+}
+
+.fa-heart {
+    position: relative;
+    left: 100px;
+    color: rgb(255, 20, 102);
+    font-size: 400px;
+    animation: pulse 1s linear infinite; 
+}
+
+@keyframes pulse {
+    0%{
+      transform: scale(1);
+      opacity: 1;
+    }
+    50%{
+      transform: scale(1.1);
+      opacity:1;
+    }
+    100%{
+      transform: scale(1);
+      opacity:1;
+    }
+}
