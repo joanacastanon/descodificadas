@@ -1,4 +1,4 @@
-/* STYLE SITE DESCODIFICADAS (VEGRANGO) */
+/* STYLE SITE DESCODIFICADAS (VEGRANGO) - PÁGINA INICIAL */
 
 * {
     font-family: Roboto;
@@ -8,54 +8,69 @@ body {
     background-color: #CADBDA;
 }
 
-header{
+#barra-topo {
+    display: flex;
+    background-color: rgb(94, 86, 86);
+    padding: 0px;
+    /*color: white;
+    font-weight: bold; */
+    justify-content: space-between;
+    height: auto;
+
+    /* flex-direction: row; (nao está fazendo diferença)*/
+}
+
+.logo{
+    width: 20%;
+    height: 85%;
+    padding: 1%;
+    text-align: left;
+    padding-left: 5%;  
+    
+}
+
+#texto-logo{
+    font-size: 20pt;
+    padding-top: 0%;
+    /*position: relative;
+    bottom: 20px; */
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    
+}
+
+#icone-media {
+    padding-right: 20px;
+}
+
+.menu .topicos-menu {
+    display: flex;
+    text-align: right;
+    list-style-type: none; /*tira bolinha dos topicos*/
+/*  padding-bottom: 20px; */
+    
+}
+
+.menu .topicos-menu a {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 12pt;
+    color: white;
+    text-decoration: none;
+}
+
+.menu .topicos-menu a:hover {
+    color: lightgray;
+    text-decoration: none;   /*se não colocar, após a primeira página ser visitada, bolinhas aparecem no menu*/
+}
+
+#titulo-subtitulo-imagemfundo{
+    padding: 0px;
     color: white;
     height: auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)), url("imagens descod/fundoPaginaInicial.jpg");
-}
-
-.logo{
-    width: 5%;
-    height: 5%;
-    padding: 1%;
-    text-align: left;
-    display: inline;  
-}
-
-#texto-logo{
-    font-size: 15pt;
-    font-weight: 300;
-    padding: 1%;
-    /*position: relative;
-    bottom: 20px; */
-    text-align: left;
-    display: inline;
-    text-decoration: none;
-}
-
-#barra-topo {
-    background-color: rgb(94, 86, 86);
-}
-
-#topicos-menu {
-    display: inline;
-}
-
-#menu li {
-    font-size: 12pt;
-    text-align: right;
-    display: inline;
-    cursor: pointer;
-    padding: 20px;
-}
-
-#menu a, #texto-logo {
-    text-decoration: none;
-}
-
-#menu .topicos-menu a {
-    font-weight: bold;
 }
 
 h1{
@@ -65,11 +80,12 @@ h1{
 h3{
     font-size: 20px;
 }
-#titulosubtitulo{
+#titulo-subtitulo-imagemfundo{
     color: white;
     text-align: center;
-    position: relative;
-    bottom: 50px;
+    
+    /*position: relative;
+    bottom: 50px; */
 
 }
 .pedido, .entregas{
@@ -101,7 +117,7 @@ button {
     border-radius: 8px;
     border-style: none;
     margin-bottom: 60px;
-    cursor: pointer;
+    /*cursor: pointer; é o default agora?*/
 }
 #formulario{
     height: 500px;
