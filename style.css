@@ -2,10 +2,19 @@
 
 * {
     font-family: Roboto;
+    font-weight: normal; /*padrao para h1 é negrito, entao o titulo estava ficando em negrito tb*/
 }
 
 body {
     background-color: #CADBDA;
+}
+
+#fundo-com-imagem {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url("imagens descod/fundoPaginaInicial.jpg"); /*escurece imagem*/
+    width: 100%;
+    height: 500px;
+    z-index: -1; /*nao faz diferenca*/
 }
 
 #barra-topo {
@@ -19,6 +28,7 @@ body {
     height: auto;
     position: fixed;
 /*     flex-direction: row; */
+    z-index: 1;
 }
 
 .logo{
@@ -38,7 +48,7 @@ body {
     left: 1%;
     text-align: left;
     color: white;
-    font-weight: bolder;
+    /* font-weight: bold; */
     text-decoration: none; /*LINHA DE BAIXO NAO ESTÁ SAINDO*/ 
 }
 
@@ -69,32 +79,26 @@ body {
 
 .menu .topicos-menu a:hover {
     color: lightgray;
-    text-decoration: none;   /*se não colocar, após a primeira página ser visitada, bolinhas aparecem no menu*/
 }
 
-#titulo-subtitulo-imagemfundo{
+#titulo-subtitulo {
+    position: relative;
+    top: 25%;
     padding: 0px;
     color: white;
-    height: auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)), url("imagens descod/fundoPaginaInicial.jpg");
-}
-
-h1{
-    font-size: 70.6667px;
-}
-
-h3{
-    font-size: 20px;
-}
-#titulo-subtitulo-imagemfundo{
-    color: white;
     text-align: center;
-    
-    /*position: relative;
-    bottom: 50px; */
 
 }
+
+#titulo {
+    font-size: 90px;
+    margin: auto;
+}
+
+#subtitulo {
+    font-size: 30px;
+}
+
 .pedido, .entregas{
     text-align: center;
 }
