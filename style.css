@@ -11,33 +11,35 @@ body {
 #barra-topo {
     display: flex;
     background-color: rgb(94, 86, 86);
-    padding: 0px;
+    margin: 0px; /*NAO ESTÁ INDO: TIRAR ESPAÇO DE CIMA*/
     /*color: white;
     font-weight: bold; */
     justify-content: space-between;
+    width: 98.9%;
     height: auto;
-
-    /* flex-direction: row; (nao está fazendo diferença)*/
+    position: fixed;
+/*     flex-direction: row; */
 }
 
 .logo{
-    width: 20%;
-    height: 85%;
+    width: 13%;
+    height: 80%;
     padding: 1%;
     text-align: left;
-    padding-left: 5%;  
-    
+    padding-left: 5%;
+    box-sizing: content-box; /*diminui um pouco a barra-topo e o logo*/
 }
 
 #texto-logo{
     font-size: 20pt;
     padding-top: 0%;
-    /*position: relative;
-    bottom: 20px; */
+    position: relative;
+    bottom: 25%;
+    left: 1%;
     text-align: left;
     color: white;
-    text-decoration: none;
-    
+    font-weight: bolder;
+    text-decoration: none; /*LINHA DE BAIXO NAO ESTÁ SAINDO*/ 
 }
 
 #icone-media {
@@ -46,18 +48,23 @@ body {
 
 .menu .topicos-menu {
     display: flex;
+    position: relative;
+    top: 12%;
     text-align: right;
     list-style-type: none; /*tira bolinha dos topicos*/
 /*  padding-bottom: 20px; */
-    
 }
 
 .menu .topicos-menu a {
     padding-right: 10px;
     padding-left: 10px;
-    font-size: 12pt;
+    font-size: 120%;
     color: white;
-    text-decoration: none;
+    font-weight: bolder;
+    text-decoration-line: underline;
+    text-decoration-thickness: 40%;
+    text-decoration-color: rgba(12,128,121,1);
+    text-underline-offset: 67%;
 }
 
 .menu .topicos-menu a:hover {
