@@ -18,12 +18,12 @@ body {
 }
 
 #barra-topo {
-    display: flex;
+    display: inline-flex; /*diferenca entre inline-flex e inline?*/
     background-color: rgb(94, 86, 86);
     margin: 0px; /*NAO ESTÁ INDO: TIRAR ESPAÇO DE CIMA*/
     /*color: white;
     font-weight: bold; */
-    justify-content: space-between;
+    justify-content: space-between; /*sem isso o text-align: left dos topicos nao funciona*/
     width: 98.9%;
     height: auto;
     position: fixed;
