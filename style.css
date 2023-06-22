@@ -19,7 +19,7 @@ body {
 
 #barra-topo {
     display: inline-flex; /*diferenca entre inline-flex e inline?*/
-    background-color: rgb(94, 86, 86);
+    background-color: '';
     margin: 0px; /*NAO ESTÁ INDO: TIRAR ESPAÇO DE CIMA*/
     /*color: white;
     font-weight: bold; */
@@ -71,14 +71,19 @@ body {
     font-size: 120%;
     color: white;
     font-weight: bolder;
-    text-decoration-line: underline;
-    text-decoration-thickness: 40%;
-    text-decoration-color: rgba(12,128,121,1);
-    text-underline-offset: 67%;
+    text-decoration: none; /* tira sublinhado default */
 }
 
 .menu .topicos-menu a:hover {
     color: lightgray;
+}
+
+/* deixa sublinhado verde apenas na página que está sendo acessada */
+#sublinhadoPgInic {
+    text-decoration-line: underline;
+    text-decoration-thickness: 40%;
+    text-decoration-color: rgba(12,128,121,1);
+    text-underline-offset: 67%;
 }
 
 #titulo-subtitulo {
