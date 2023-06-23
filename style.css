@@ -3,21 +3,23 @@
 * {
     font-family: Roboto;
     font-weight: normal; /*padrao para h1 é negrito, entao o titulo estava ficando em negrito tb*/
+    margin-top: 0;
 }
 
 body {
     background-color: #CADBDA;
+    margin: 0; 
 }
 
 #fundo-com-imagem {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
     rgba(0, 0, 0, 0.5)), url("imagens descod/fundoPaginaInicial.jpg"); /*escurece imagem*/
     width: 100%;
-    height: 500px;
+    height: 600px;
     z-index: -1; /*nao faz diferenca*/
 }
 
-#barra-topo {
+#navbar {
     display: inline-flex; /*diferenca entre inline-flex e inline?*/
     background-color: '';
     margin: 0px; /*NAO ESTÁ INDO: TIRAR ESPAÇO DE CIMA*/
@@ -32,43 +34,50 @@ body {
 }
 
 .logo{
-    width: 13%;
-    height: 80%;
-    padding: 1%;
+    display: inline-flex;
+    width: 67.36px;
+    height: 56px;
     text-align: left;
-    padding-left: 5%;
-    box-sizing: content-box; /*diminui um pouco a barra-topo e o logo*/
+    padding: 5% 30%;
+    box-sizing: content-box; /* default */
+}
+
+#logo-link {
+    height: auto;
+    width: 5%;
 }
 
 #texto-logo{
     font-size: 20pt;
-    padding-top: 0%;
-    position: relative;
-    bottom: 25%;
-    left: 1%;
-    text-align: left;
-    color: white;
-    /* font-weight: bold; */
-    text-decoration: none; /*LINHA DE BAIXO NAO ESTÁ SAINDO*/ 
+    padding-top: 20px;
+    color: white;  
+    /* font-weight: bold; */ 
+}
+
+/* tira sublinhado do link */
+#texto-logo-link {
+    text-decoration: none;
+    height: fit-content;
+    padding-top: 1%;
+    padding-left: 1%;
 }
 
 #icone-media {
-    padding-right: 20px;
+    margin-right: 20px;
 }
 
 .menu .topicos-menu {
-    display: flex;
+    display: inline-flex;
     position: relative;
-    top: 12%;
+    top: 45%;
     text-align: right;
     list-style-type: none; /*tira bolinha dos topicos*/
-/*  padding-bottom: 20px; */
 }
 
 .menu .topicos-menu a {
     padding-right: 10px;
     padding-left: 10px;
-    font-size: 120%;
+    font-size: 16pt;
     color: white;
     font-weight: bolder;
     text-decoration: none; /* tira sublinhado default */
@@ -79,11 +88,11 @@ body {
 }
 
 /* deixa sublinhado verde apenas na página que está sendo acessada */
-#sublinhadoPgInic {
+#sublinhado-pg-inic {
     text-decoration-line: underline;
     text-decoration-thickness: 40%;
     text-decoration-color: rgba(12,128,121,1);
-    text-underline-offset: 67%;
+    text-underline-offset: 47%;
 }
 
 #titulo-subtitulo {
@@ -104,6 +113,9 @@ body {
     font-size: 30px;
 }
 
+
+/* MAIN */
+
 .pedido, .entregas{
     text-align: center;
 }
@@ -116,7 +128,7 @@ body {
 #missao, #entregastitulo{
     font-size: 40px;
     text-align: center;
-    padding: 20px;
+    margin: 70px;
 
 }
 #facapedido, #entregasinfo{
@@ -129,11 +141,11 @@ button {
     background-color: rgba(12,128,121,1);
     color: white;
     font-size: 30px;
-    padding: 10px 100px;
+    padding: 10px 150px;
     border-radius: 8px;
     border-style: none;
     margin-bottom: 60px;
-    /*cursor: pointer; é o default agora?*/
+    cursor: pointer;
 }
 #formulario{
     height: 500px;
@@ -150,4 +162,10 @@ button {
     font-weight: bold;
     text-align: right;
     padding-bottom: 20px;
+}
+
+
+a {
+    border-style: dashed;
+    border-color: red;
 }
