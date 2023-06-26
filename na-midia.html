@@ -1,5 +1,8 @@
+<!--SITE DESCODIFICADAS (VEGRANGO) - PÁGINA NA MÍDIA-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,32 +13,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>VegRangoQuentinhas - Na mídia</title>
 </head>
+
 <body>
+    <!-- HEADER -->
     <header>
-        <a href="index.html">
-            <img class="logo"  src="imagens descod/vegRango logo.png" alt="Logo da VegRango Quentinhas" title="Imagem de garfo e folhas acima no nome da empresa"> 
-            <span>VegRango Quentinhas</span>
-        </a>
-        
-        <h1>Na mídia</h1>
-        <nav>              <!--qual é o atalho p/ isso mesmo?-->
-            <ul>
-                <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="refeicoes.html">Refeições</a></li>
-                <li><a href="na-midia.html">Na mídia</a></li>
-            </ul>
-        </nav>
+        <div id="fundo-com-imagem">
+            <section id="navbar">
+                <!--se nao separar os dois links a posicao fica errada-->
+                <a id="logo-link" href="index.html"><img class="logo" src="imagens descod/vegRango logo.png"
+                        alt="Logo da empresa" title="VegRango Quentinhas" /></a>
+                <a id="texto-logo-link" href="index.html"><span id="texto-logo">VegRango Quentinhas</span></a>
+                <nav class="menu">
+                    <ul class="topicos-menu">
+                        <li>
+                            <a id="sublinhado-pg-inic" href="index.html">Página inicial</a>
+                        </li>
+                        <li>
+                            <a id="sublinhado-pg-refeic" href="refeicoes.html">Refeições</a>
+                        </li>
+                        <li id="icone-media">
+                            <a id="sublinhado-pg-midia" href="na-midia.html">Na mídia</a>
+                        </li>
+                        <!--posso colocar dois ids no mesmo elemento em tags diferentes?-->
+                    </ul>
+
+                    <!--SEARCH BAR-->
+                    <div class="search-container">
+                        <form action="/search" method="get">
+                            <input class="search expandright" id="searchright" type="search" name="q"
+                                placeholder="Search" />
+                            <label class="button searchbutton" for="searchright"><span
+                                    class="mglass">&#9906;</span></label>
+                        </form>
+                    </div>
+                </nav>
+            </section>
+
+            <section id="titulo-subtitulo">
+                <h1 id="titulo">Na mídia</h1>
+            </section>
+        </div>
     </header>
 
     <main>
         <section id="midia-section">
             <h2 id="midia-texto">Confira nossos momentos de fama!</h2>
-            <iframe id="midia-video" width="560" height="315" src="https://www.youtube.com/embed/wHboOwSHGbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe id="midia-video" width="560" height="315" src="https://www.youtube.com/embed/wHboOwSHGbA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </section>
     </main>
 
     <footer class="rodape">
         <span id="rodapetexto"> por Joana Castañon para fins de aprendizagem (VegRango é uma empresa fictícia)</span>
     </footer>
+    <!-- CHAMADA DE ARQUIVO JS -->
+    <script src="index.js"></script>
 </body>
+
 </html>

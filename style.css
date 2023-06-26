@@ -1,4 +1,4 @@
-/* STYLE SITE DESCODIFICADAS (VEGRANGO) - PÁGINA INICIAL */
+/* ESTILO SITE DESCODIFICADAS (VEGRANGO) - PÁGINA INICIAL */
 
 * {
     font-family: sans-serif; /*para se Roboto nao estiver disponível*/
@@ -12,14 +12,14 @@ body {
     margin: 0; 
 }
 
+/* HEADER */
 #fundo-com-imagem {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),
     rgba(0, 0, 0, 0.5)), url("imagens descod/fundoPaginaInicial.jpg"); /*escurece imagem*/
     width: 100%;
     height: 483.17px;
-/*     border-bottom: 500px;
+/*  border-bottom: 500px;
     border-color:  rgba(12,128,121,1); */
-
     z-index: -1; /*nao faz diferenca*/
 }
 
@@ -35,7 +35,7 @@ body {
     position: fixed;
 /*     flex-direction: row; */
     z-index: 1;
-
+/* NAO PARECE FAZER DIFERENCA */
     transition: opacity .125s;
     transition-duration: 5s;
     transition-timing-function: ease;
@@ -50,10 +50,6 @@ body {
     text-align: left;
     padding: 5% 30%;
     box-sizing: content-box; /* default */
-}
-
-#logo-link {
-
 }
 
 #texto-logo {
@@ -104,83 +100,7 @@ body {
     text-underline-offset: 74%;
 }
 
-#titulo-subtitulo {
-    position: relative;
-    top: 25%;
-    padding: 0px;
-    color: white;
-    text-align: center;
-
-}
-
-#titulo {
-    font-size: 63pt;
-    margin: auto;
-    padding-bottom: 30px;
-}
-
-#subtitulo {
-    font-size: 21.3px;
-}
-
-
-/* MAIN */
-
-.pedido, .entregas{
-    text-align: center;
-}
-
-/*#entregas{
-    padding: 30px;
-}*/
-
-
-#missao, #entregastitulo{
-    font-size: 40px;
-    text-align: center;
-    margin: 70px;
-
-}
-#facapedido, #entregasinfo{
-    font-size: 25px;
-    padding: 20px;
-}
-
-
-#botaopedido {
-    background-color: rgba(12,128,121,1);
-    color: white;
-    font-size: 30px;
-    padding: 10px 150px;
-    border-radius: 8px;
-    border-style: none;
-    margin-bottom: 60px;
-    cursor: pointer;
-}
-#formulario{
-    height: 500px;
-
-}
-
-#mapa {
-    padding: 20px;
-}
-
-/*RODAPE*/
-.rodape{
-    font-size: 12px;
-    font-weight: bold;
-    text-align: right;
-    padding-bottom: 20px;
-}
-
-/* VISUALIZAR CONTORNO LINKS */
-/* a {
-    border-style: dashed;
-    border-color: red;
-} */
-
-/* BUSCA NAVBAR */
+/* busca navbar */
 .button {
 	display: inline-block;
 	font-size: 14px;
@@ -260,3 +180,80 @@ body {
 .expandright:focus {
 	padding: 0 0 0 16px;
 }
+/* fim busca navbar */
+
+#titulo-subtitulo {
+    position: relative;
+    top: 25%;
+    padding: 0px;
+    color: white;
+    text-align: center;
+
+}
+
+#titulo {
+    font-size: 63pt;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+#subtitulo {
+    font-size: 21.3px;
+}
+
+
+/* MAIN */
+
+.pedido, .entregas{
+    text-align: center;
+}
+
+/*#entregas{
+    padding: 30px;
+}*/
+
+
+#missao, #entregastitulo{
+    font-size: 40px;
+    text-align: center;
+    margin: 70px;
+
+}
+#facapedido, #entregasinfo{
+    font-size: 25px;
+    padding: 20px;
+}
+
+
+#botaopedido {
+    background-color: rgba(12,128,121,1);
+    color: white;
+    font-size: 30px;
+    padding: 10px 150px;
+    border-radius: 8px;
+    border-style: none;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+#formulario{
+    height: 500px;
+
+}
+
+#mapa {
+    padding: 20px;
+}
+
+/* RODAPE */
+.rodape{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+/* VISUALIZAR CONTORNO LINKS */
+/* a {
+    border-style: dashed;
+    border-color: red;
+} */

@@ -1,27 +1,207 @@
+/* ESTILO SITE DESCODIFICADAS (VEGRANGO) - PÁGINA NA MÍDIA */
+
 * {
+    font-family: sans-serif; /*para se Roboto nao estiver disponível*/
     font-family: Roboto;
+    font-weight: normal; /*padrao para h1 é negrito, entao o titulo estava ficando em negrito tb*/
+    margin-top: 0;
 }
 
 body {
     background-color: #CADBDA;
+    margin: 0;
 }
 
-header{
-    color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)), url("imagens descod/fundoPaginaNaMidia.jpg");
-    background-size: 1250px;
-    height: 450px;
+#fundo-com-imagem{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.5)), url("imagens descod/fundoPaginaNaMidia.jpg"); /*escurece imagem*/
+    background-size: cover;
+    width: 100%;
+    height: 483.17px;
+/*  border-bottom: 500px;
+    border-color:  rgba(12,128,121,1); */
+    z-index: -1; /*nao faz diferenca*/
 }
 
-.logo{
-    width: 5%;
-    height: 5%;
-    padding: 1%;
+#navbar {
+    display: inline-flex; /*diferenca entre inline-flex e inline?*/
+    background-color: '';
+    margin: 0px; /*NAO ESTÁ INDO: TIRAR ESPAÇO DE CIMA*/
+    /*color: white;
+    font-weight: bold; */
+    justify-content: space-between; /*sem isso o text-align: left dos topicos nao funciona*/
+    width: 100%;
+    height: 56px;
+    position: fixed;
+/*     flex-direction: row; */
+    z-index: 1;
+/* NAO PARECE FAZER DIFERENCA */
+    transition: opacity .125s;
+    transition-duration: 5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: opacity;
+}
+
+.logo {
+    display: inline-flex;
+    width: 54.54px;
+    height: 45,36px;
     text-align: left;
-    display: inline;  
+    padding: 5% 30%;
+    box-sizing: content-box; /* default */
 }
 
+#texto-logo {
+    display: inline-flex;
+    position: relative;
+    right: 145%;
+    font-size: 20px;
+    color: white;
+}
+
+/* tira sublinhado do link */
+#texto-logo-link {
+    text-decoration: none;
+    height: 2px;
+    padding-top: 1%;
+}
+
+#icone-media {
+    margin-right: 10px;
+}
+
+.menu .topicos-menu {
+    display: inline-flex;
+    position: relative;
+    bottom: 10%;
+    text-align: right;
+    list-style-type: none; /*tira bolinha dos topicos*/
+}
+
+.menu .topicos-menu a {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none; /* tira sublinhado default */
+}
+
+.menu .topicos-menu a:hover {
+    color: lightgray;
+}
+
+/* deixa sublinhado verde apenas na página que está sendo acessada */
+#sublinhado-pg-midia {
+    text-decoration-line: underline;
+    text-decoration-thickness: 45%;
+    text-decoration-color: rgba(12,128,121,1);
+    text-underline-offset: 74%;
+}
+
+/* busca navbar */
+.button {
+	display: inline-block;
+	font-size: 14px;
+	height: 28px;
+	line-height: 50px;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+/* 	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none; */
+}
+
+.search-container {
+	position: relative;
+	display: inline-block;
+	margin: 4px 2px;
+	height: 50px;
+	width: 50px;
+	vertical-align: bottom;
+}
+
+.mglass {
+	display: inline-block;
+	pointer-events: none;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+}
+
+.searchbutton {
+    position: absolute;
+	font-size: 30px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.search:focus + .searchbutton {
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	background-color: white;
+	color: black;
+}
+
+.search {
+	position: absolute;
+	left: 49px;
+	background-color: white;
+	outline: none;
+	border: none;
+	padding: 0;
+	width: 0;
+	height: 100%;
+	z-index: 10;
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+}
+
+.search:focus {
+	width: 363px; /* Bar width+1px */
+	padding: 0 16px 0 0;
+}
+
+.expandright {
+	left: auto;
+	right: 49px; /* Button width-1px */
+}
+
+.expandright:focus {
+	padding: 0 0 0 16px;
+}
+/* fim busca navbar */
+
+#titulo-subtitulo {
+    position: relative;
+    top: 35%;
+    padding: 0px;
+    color: white;
+    text-align: center;
+
+}
+
+#titulo {
+    font-size: 63pt;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+#subtitulo {
+    font-size: 21.3px;
+}
+
+/* MAIN */
 #midia-section {
     text-align: center;
 }

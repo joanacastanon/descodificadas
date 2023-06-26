@@ -2,73 +2,122 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
     <title>VegRango Quentinhas</title>
 </head>
+
 <body>
+    <!-- HEADER -->
     <header>
         <div id="fundo-com-imagem">
-        <section id="navbar">
+            <section id="navbar">
                 <!--se nao separar os dois links a posicao fica errada-->
-                <a id="logo-link" href="index.html"><img class="logo" src="imagens descod/vegRango logo.png" alt="Logo da empresa" title="VegRango Quentinhas"></a>
+                <a id="logo-link" href="index.html"><img class="logo" src="imagens descod/vegRango logo.png"
+                        alt="Logo da empresa" title="VegRango Quentinhas" /></a>
                 <a id="texto-logo-link" href="index.html"><span id="texto-logo">VegRango Quentinhas</span></a>
-            <nav class="menu">
-                <ul class="topicos-menu">
-                    <li><a id="sublinhado-pg-inic" href="index.html">Página inicial</a></li>
-                    <li><a id="sublinhado-pg-refeic" href="refeicoes.html">Refeições</a></li>
-                    <li id="icone-media"><a id="sublinhado pg-midia" href="na-midia.html">Na mídia</a></li> <!--posso colocar dois ids no mesmo elemento em tags diferentes?-->
-                </ul>
-            
-                <!--SEARCH BAR-->
-                <div class="search-container">
-                    <form action="/search" method="get">
-                      <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
-                      <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
-                    </form>
-                  </div>
-            </nav>
-        </section>
-    
-        <section id="titulo-subtitulo">
-            <h3 id="subtitulo">Quentinhas veganas</h3>
-            <h1 id="titulo">VegRango</h1>
-            <h3 id="subtitulo">Frescas ou congeladas</h3>
-        </section>
-    </div>
+                <nav class="menu">
+                    <ul class="topicos-menu">
+                        <li>
+                            <a id="sublinhado-pg-inic" href="index.html">Página inicial</a>
+                        </li>
+                        <li>
+                            <a id="sublinhado-pg-refeic" href="refeicoes.html">Refeições</a>
+                        </li>
+                        <li id="icone-media">
+                            <a id="sublinhado pg-midia" href="na-midia.html">Na mídia</a>
+                        </li>
+                        <!--posso colocar dois ids no mesmo elemento em tags diferentes?-->
+                    </ul>
+
+                    <!--SEARCH BAR-->
+                    <div class="search-container">
+                        <form action="/search" method="get">
+                            <input class="search expandright" id="searchright" type="search" name="q"
+                                placeholder="Search" />
+                            <label class="button searchbutton" for="searchright"><span
+                                    class="mglass">&#9906;</span></label>
+                        </form>
+                    </div>
+                </nav>
+            </section>
+
+            <section id="titulo-subtitulo">
+                <h3 id="subtitulo">Quentinhas veganas</h3>
+                <h1 id="titulo">VegRango</h1>
+                <h3 id="subtitulo">Frescas ou congeladas</h3>
+            </section>
+        </div>
     </header>
+    <!-- MAIN -->
     <main>
-        <section class="pedido">      
-            <p id="missao"><br>Somos uma empresa familiar que quer levar o melhor da comida vegana para a sua casa</p>
-            <p id="facapedido"><br>Para fazer seu pedido, clique no link ou preencha o formulário abaixo<br><br></p>
-            <button class ="botao" id="botaopedido" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScbv3CzDmtqu7aEmdw9wQOij-G2aeYhGdz5b9rJq9U_jLjOhg/viewform', '_blank')">Faça seu pedido!</button>
+        <section class="pedido">
+            <p id="missao">
+                <br />Somos uma empresa familiar que quer levar o melhor da comida
+                vegana para a sua casa
+            </p>
+            <p id="facapedido">
+                <br />Para fazer seu pedido, clique no link ou preencha o formulário
+                abaixo<br /><br />
+            </p>
+            <button class="botao" id="botaopedido"
+                onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScbv3CzDmtqu7aEmdw9wQOij-G2aeYhGdz5b9rJq9U_jLjOhg/viewform', '_blank')">
+                Faça seu pedido!
+            </button>
             <div id="formulario">
-                <iframe id="formulario" src="https://docs.google.com/forms/d/e/1FAIpQLScbv3CzDmtqu7aEmdw9wQOij-G2aeYhGdz5b9rJq9U_jLjOhg/viewform?embedded=true" width="640" height="1392" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+                <iframe id="formulario"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScbv3CzDmtqu7aEmdw9wQOij-G2aeYhGdz5b9rJq9U_jLjOhg/viewform?embedded=true"
+                    width="640" height="1392" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
             </div>
         </section>
 
-        
-        <br><br><br>  
+        <br /><br /><br />
         <section class="entregas">
             <span id="entregastitulo">Entregas</span>
-            <br><br><br>
+            <br /><br /><br />
             <span id="entregasinfo">Entregamos em qualquer estação de metrô do Rio de Janeiro</span>
-            <br>
+            <br />
             <div id="mapa">
-                <div style="text-decoration:none; overflow:hidden;max-width:100%;width:700px;height:500px; margin: 0 auto; padding: 20px;"><div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Cidade+Rio+de+Janeiro,+Rio+de+Janeiro+-+State+of+Rio+de+Janeiro,+Brazil&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><style>#embedded-map-display img{max-height:none;max-width:none!important;background:none!important;}</style></div>
+                <div style="
+              text-decoration: none;
+              overflow: hidden;
+              max-width: 100%;
+              width: 700px;
+              height: 500px;
+              margin: 0 auto;
+              padding: 20px;
+            ">
+                    <div id="embedded-map-display" style="height: 100%; width: 100%; max-width: 100%">
+                        <iframe style="height: 100%; width: 100%; border: 0" frameborder="0"
+                            src="https://www.google.com/maps/embed/v1/place?q=Cidade+Rio+de+Janeiro,+Rio+de+Janeiro+-+State+of+Rio+de+Janeiro,+Brazil&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                    </div>
+                    <style>
+                        #embedded-map-display img {
+                            max-height: none;
+                            max-width: none !important;
+                            background: none !important;
+                        }
+                    </style>
+                </div>
             </div>
-        </section>  
+        </section>
     </main>
+    <!-- FOOTER -->
     <footer class="rodape">
-        <div id="rodapetexto"> Criado por Joana Castañon para fins de aprendizagem (VegRango é uma empresa fictícia)</div>
+        <div id="rodapetexto">
+            Criado por Joana Castañon para fins de aprendizagem (VegRango é uma
+            empresa fictícia)
+        </div>
     </footer>
-
-    <script src="index.js"></script> <!--melhor linkar arquivo-->
+    <!-- CHAMADA DE ARQUIVO JS -->
+    <script src="index.js"></script>
 </body>
+
 </html>
