@@ -16,7 +16,7 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),
     rgba(0, 0, 0, 0.5)), url("imagens descod/fundoPaginaInicial.jpg"); /*escurece imagem*/
     width: 100%;
-    height: 600px;
+    height: 483.17px;
 /*     border-bottom: 500px;
     border-color:  rgba(12,128,121,1); */
 
@@ -31,7 +31,7 @@ body {
     font-weight: bold; */
     justify-content: space-between; /*sem isso o text-align: left dos topicos nao funciona*/
     width: 100%;
-    height: auto;
+    height: 56px;
     position: fixed;
 /*     flex-direction: row; */
     z-index: 1;
@@ -43,45 +43,42 @@ body {
     transition-property: opacity;
 }
 
-.logo{
+.logo {
     display: inline-flex;
-    width: 67.36px;
-    height: 56px;
+    width: 54.54px;
+    height: 45,36px;
     text-align: left;
     padding: 5% 30%;
     box-sizing: content-box; /* default */
 }
 
 #logo-link {
-    height: auto;
-    width: 5%;
+
 }
 
-#texto-logo{
+#texto-logo {
+    display: inline-flex;
     position: relative;
-    right: 140%;
-    font-size: 20pt;
-    padding-top: 20px;
-    color: white;  
-    /* font-weight: bold; */ 
+    right: 145%;
+    font-size: 20px;
+    color: white;
 }
 
 /* tira sublinhado do link */
 #texto-logo-link {
     text-decoration: none;
-    height: fit-content;
+    height: 2px;
     padding-top: 1%;
-    padding-left: 1%;
 }
 
 #icone-media {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .menu .topicos-menu {
     display: inline-flex;
     position: relative;
-    top: 10%;
+    bottom: 10%;
     text-align: right;
     list-style-type: none; /*tira bolinha dos topicos*/
 }
@@ -89,7 +86,7 @@ body {
 .menu .topicos-menu a {
     padding-right: 10px;
     padding-left: 10px;
-    font-size: 15pt;
+    font-size: 16px;
     color: white;
     font-weight: bolder;
     text-decoration: none; /* tira sublinhado default */
@@ -102,9 +99,9 @@ body {
 /* deixa sublinhado verde apenas na página que está sendo acessada */
 #sublinhado-pg-inic {
     text-decoration-line: underline;
-    text-decoration-thickness: 40%;
+    text-decoration-thickness: 45%;
     text-decoration-color: rgba(12,128,121,1);
-    text-underline-offset: 55%;
+    text-underline-offset: 74%;
 }
 
 #titulo-subtitulo {
@@ -117,12 +114,13 @@ body {
 }
 
 #titulo {
-    font-size: 90px;
+    font-size: 63pt;
     margin: auto;
+    padding-bottom: 30px;
 }
 
 #subtitulo {
-    font-size: 30px;
+    font-size: 21.3px;
 }
 
 
@@ -176,23 +174,18 @@ body {
     padding-bottom: 20px;
 }
 
-
+/* VISUALIZAR CONTORNO LINKS */
 /* a {
     border-style: dashed;
     border-color: red;
 } */
 
-
-
+/* BUSCA NAVBAR */
 .button {
 	display: inline-block;
-	margin: 4px 2px;
 	font-size: 14px;
-	padding-left: 32px;
-	padding-right: 32px;
-	height: 50px;
+	height: 28px;
 	line-height: 50px;
-	text-align: ;
 	color: white;
 	text-decoration: none;
 	cursor: pointer;
