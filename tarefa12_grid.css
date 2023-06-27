@@ -1,0 +1,90 @@
+/* The grid div is the grid container, and all the direct child elements are the grid items. When we defined the grid tracks with grid-template-columns and grid-template-rows, grid provided us numbered lines called the grid lines to use for positioning the items. You can refer to each grid line by a numerical index. */
+/* Columns start at one, from left to right by default, and rows also begin at one from top to bottom. It takes two grid lines to make a single column or row, one line on either side, so our 8-column and 8-row grid consist of
+9-column lines and 9-row lines.
+
+The vertical lines 1 and 2 determine the start and end points of the first column. Lines 2 and 3 the second column and so on. Similarly, horizontal lines 1 and 2 determine the position of the first row, and lines 2 and 3 the second row and so on. Knowing the above concepts will help you understand how we are going to position items (images) on our grid. */
+.album {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(15,5vw); /* 5vw: 5% of viewport width  */
+    grid-gap: 5px;
+}
+
+.album_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Setting the object fit value to cover is like setting the background size to cover for the background image. We are doing this so the image can fill the height and width of its box (the grid item), maintaining its aspect ratio.
+
+Note: The object fit property only works if we set the width and height properties. */
+}
+
+.album_item-1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 8;
+}
+
+.album_item-2 {
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.album_item-3 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 10;
+    grid-row-end: 12;
+}
+
+.album_item-4 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 8;
+    grid-row-end: 10;
+}
+
+.album_item-5 {
+    grid-column-start: 5;
+    grid-column-end: 12;
+    grid-row-start: 4;
+    grid-row-end: 8;
+}
+
+.album_item-6 {
+    grid-column-start: 10;
+    grid-column-end: 12;
+    grid-row-start: 8;
+    grid-row-end: 12;
+}
+
+.album_item-7 {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 8;
+    grid-row-end: 12;
+}
+
+.album_item-8 {
+    grid-column-start: 8;
+    grid-column-end: 10;
+    grid-row-start: 8;
+    grid-row-end: 12;
+}
+
+.album_item-9 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 12;
+}
+
+.album_item-10 {
+    grid-column-start: 8;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
