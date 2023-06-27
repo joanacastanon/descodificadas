@@ -26,21 +26,21 @@ body{
 #navbar {
     display: inline-flex; /*diferenca entre inline-flex e inline?*/
     background-color: '';
-    margin: 0px; /*NAO ESTÁ INDO: TIRAR ESPAÇO DE CIMA*/
-    /*color: white;
+/*  margin: 0px; */
+/*  color: white;
     font-weight: bold; */
     justify-content: space-between; /*sem isso o text-align: left dos topicos nao funciona*/
     width: 100%;
     height: 56px;
     position: fixed;
-/*     flex-direction: row; */
     z-index: 1;
-/* NAO PARECE FAZER DIFERENCA */
+/*  flex-direction: row; */
+/* nao parece fazer diferença
     transition: opacity .125s;
     transition-duration: 5s;
     transition-timing-function: ease;
     transition-delay: 0s;
-    transition-property: opacity;
+    transition-property: opacity; */
 }
 
 .logo {
@@ -232,9 +232,14 @@ h2 {
 
 
 /* RODAPE */
-.rodape{
-    font-size: 12px;
+.rodape {
+    margin: 30px;
+    margin-right: 50px;
+}
+
+#rodapetexto {
+    color: rgba(33,33,33,1);
     font-weight: bold;
+    font-size: 12px;
     text-align: right;
-    padding-bottom: 20px;
 }
